@@ -1,2 +1,2 @@
 #!/bin/bash
-for a in {a..z};do for b in {a..z};do [[ $a$b == oo ]]||printf "%s\n" $a$b;done;done
+for a in {a..z};do for b in {a..z};do if [ $a$b != oo ];then printf "%s\n" $a$b;fi;done;done
